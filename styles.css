@@ -1,12 +1,55 @@
 .cabecera{
     background-color: lightcoral;
-}
-g {
-    background-color: aqua;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    margin:5rem
 }
 
-h {
-    color: blue;
-    font-size: 100px;
+.foto-perfil {
+    width: 200px;
+    height: 250px; 
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+body{
     font-family: 'Times New Roman', Times, serif;
-}               
+    background-color: rgb(185, 140, 140) ;
+}   
+
+#sobre-mi{
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 3fr 5fr ;
+}
+
+
+
+
+
+article{
+    display: grid;
+    grid-template-columns: ;
+}
