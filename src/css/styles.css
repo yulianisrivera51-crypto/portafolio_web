@@ -1,3 +1,10 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(185, 140, 140) ;
+}   
+
+/*========= MENU ==========*/
+
 .cabecera{
     background-color: lightcoral;
     text-align: center;
@@ -9,6 +16,32 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     backdrop-filter: blur (10px);
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: indigo;
+}
+
+/*============= SOBRE MI ===========*/
+
+#sobre-mi{
+    display: flex;
+    align-items: center; 
+    gap: 70px; 
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    margin: 15rem;
+
 }
 
 .foto-perfil {
@@ -25,39 +58,134 @@
     transform: scale(1.05);
 
 }
+  
+
+/*========== PROYECTOS ==========*/
+
+#proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 40px;
+}
+
+#proyectos h2, p{
+  grid-column: 1 / -1;
+}
+
+#proyectos span{
+   color: indigo;
+}
+
+#proyectos article {
+  background: rgb(197, 131, 131);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+}
 
 
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(185, 140, 140) ;
-}   
+#proyectos article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
 
-#sobre-mi{
-    display: flex;
-    align-items: center; 
-    gap: 70px; 
-    justify-content: center;
-    align-items: center;
-    padding: 2.5rem;
-    margin: 15rem;
+
+#proyectos a {
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: rgb(235, 138, 138) ;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  width: fit-content;
 
 }
 
-#menu{
-    list-style: none;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: indigo;
+#proyectos a:hover {
+  background-color: #fabfe3;
 }
 
 
 
+/*========== CONTACTO ==========*/
+
+#contacto {
+  padding: 40px;
+  background: rgb(185, 140, 140);
+  text-align: center;
+}
+
+
+#contacto h2 {
+  margin-bottom: 10px;
+}
+
+
+#contacto p {
+  margin-bottom: 30px;
+  color:black;
+}
+
+
+#contacto fieldset {
+  border: none;
+  max-width: 400px;
+  margin: 0 auto;
+  background:  rgb(197, 131, 131);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+
+#contacto legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+#contacto input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid ;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+#contacto label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+#contacto button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(235, 138, 138) ;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#contacto button:hover {
+  background: #fabfe3;
+}
+
+
+
+
+/*=============== MASCOTAS ============*/
 
 
 header{
@@ -96,3 +224,4 @@ img {
     width: 40%;
     margin: 0 auto;
 }
+
